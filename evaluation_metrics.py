@@ -364,6 +364,7 @@ def run_complete_evaluation():
 
     # Load or load fallback history
     history_paths = [
+        Path("history.json"),
         Path("outputs/reports/history.json"),
         Path("checkpoints/history.json"),
         Path("/content/drive/MyDrive/AI-Business-Risk-Analysis-System/checkpoints/history.json"),

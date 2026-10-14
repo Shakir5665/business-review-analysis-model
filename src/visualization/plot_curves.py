@@ -28,6 +28,7 @@ def load_history(history_path: Optional[Union[str, Path]] = None) -> Dict[str, A
         candidates.append(Path(history_path))
 
     candidates.extend([
+        Path("history.json"),
         Path("outputs/reports/history.json"),
         Path("checkpoints/history.json"),
         Path(f"{GDRIVE_REPORTS_DIR}/history.json"),
