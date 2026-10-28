@@ -1,8 +1,8 @@
-"""
-$env:PYTHONPATH="."; $env:PYTHONIOENCODING="utf-8"; python tests/test_preprocessor.py
-"""
-
+import sys
 from src.preprocessing.preprocessor import ReviewPreprocessor
+
+if sys.stdout.encoding != "utf-8":
+    sys.stdout.reconfigure(encoding="utf-8")
 
 def run_tests():
     preprocessor = ReviewPreprocessor()

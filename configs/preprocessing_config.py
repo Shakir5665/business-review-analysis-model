@@ -43,10 +43,16 @@ REMOVE_SQUARE_BRACKETS = True
 
 REMOVE_QUOTES = True
 
+SPACE_PUNCTUATION_AND_SYMBOLS = True
+
 
 # ==========================================================
 # Regex Patterns
 # ==========================================================
+
+PUNCTUATION_AND_SYMBOLS_PATTERN = re.compile(
+    r"([^\s\w\u0D80-\u0DFF])"
+)
 
 URL_PATTERN = re.compile(
     r"https?://\S+|www\.\S+",

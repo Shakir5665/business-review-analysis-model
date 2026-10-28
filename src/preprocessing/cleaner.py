@@ -41,6 +41,8 @@ from configs.preprocessing_config import (
     REMOVE_BACKSLASHES,
     REMOVE_SQUARE_BRACKETS,
     REMOVE_QUOTES,
+    SPACE_PUNCTUATION_AND_SYMBOLS,
+    PUNCTUATION_AND_SYMBOLS_PATTERN,
 )
 
 from src.utils.logger import logger
@@ -145,6 +147,13 @@ class TextCleaner:
 
         if REMOVE_CONTROL_CHARACTERS:
             text = CONTROL_CHARACTER_PATTERN.sub(" ", text)
+
+        # -------------------------------------------------
+        # Space punctuation, symbols, and emojis
+        # -------------------------------------------------
+
+        if SPACE_PUNCTUATION_AND_SYMBOLS:
+            text = PUNCTUATION_AND_SYMBOLS_PATTERN.sub(r" \1 ", text)
 
         # -------------------------------------------------
         # Normalize punctuation

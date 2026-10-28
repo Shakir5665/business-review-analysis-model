@@ -45,13 +45,13 @@ SHUFFLE_TEST = False
 
 BATCH_SIZE = 64
 
-NUM_EPOCHS = 50
+NUM_EPOCHS = 100
 
 # --------------------------------------------------
 # Optimizer
 # --------------------------------------------------
 
-LEARNING_RATE = 5e-5
+LEARNING_RATE = 1e-4
 
 WEIGHT_DECAY = 0.01
 
@@ -78,7 +78,13 @@ BEST_MODEL_NAME = "best_model.pt"
 
 LATEST_CHECKPOINT_NAME = "latest_checkpoint.pt"   
 
-GDRIVE_CHECKPOINT_DIR = "/content/drive/MyDrive/AI-Business-Risk-Analysis-System/checkpoints"
+GDRIVE_DIR = "/content/drive/MyDrive/AI-Business-Risk-Analysis-System"
+
+GDRIVE_CHECKPOINT_DIR = f"{GDRIVE_DIR}/checkpoints"
+
+GDRIVE_REPORTS_DIR = f"{GDRIVE_DIR}/outputs/reports"
+
+GDRIVE_PLOTS_DIR = f"{GDRIVE_DIR}/outputs/plots"
 
 # --------------------------------------------------
 # Early Stopping
