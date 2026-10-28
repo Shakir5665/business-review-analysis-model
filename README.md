@@ -1,4 +1,4 @@
-# 🧠 AI-Powered Business Risk Analysis & Recommendation System
+# 🧠 Business Risk Analysis Model
 
 <div align="center">
 
@@ -30,7 +30,7 @@ In South Asian digital commerce ecosystems (e.g., **Daraz**, **Facebook Shop**, 
 
 Standard commercial NLP pipelines and off-the-shelf LLMs fail in these regimes due to dialectal drift, tokenization fragmentation, and orthographic variance.
 
-This repository implements the **Research Component** of the enterprise *AI-Powered Business Risk Analysis & Recommendation System*. The core system formulates review understanding as a **joint multi-task, multi-label transformer model**:
+This repository implements the **Research Component** of the enterprise *Business Risk Analysis Model*. The core system formulates review understanding as a **joint multi-task, multi-label transformer model**:
 
 1. **Task 1: Sentiment Polarity Classification** — 3-class single-label categorizer ($\text{Negative}$, $\text{Neutral}$, $\text{Positive}$).
 2. **Task 2: Operational Aspect Category Identification** — 3-pillar multi-label tagger ($\text{Quality}$, $\text{Trust}$, $\text{Delivery}$).
@@ -364,7 +364,7 @@ Example interactive session:
 
 ```text
 ============================================================
-  AI-Powered Business Risk Analysis & Recommendation System
+  Business Risk Analysis Model
              Interactive Prediction CLI Tool
 ============================================================
 [1/3] Initializing Tokenizer and Encoders... Initialization successful.
@@ -516,7 +516,7 @@ If you utilize this multi-task adapter architecture or code-switched preprocessi
 ```bibtex
 @software{business_review_risk_model_2026,
   author       = {Shakir},
-  title        = {AI-Powered Business Risk Analysis & Recommendation System: Multilingual Multi-Task Adapter Architecture},
+  title        = {Business Risk Analysis Model: Multilingual Multi-Task Adapter Architecture},
   year         = {2026},
   publisher    = {GitHub},
   journal      = {GitHub repository},
