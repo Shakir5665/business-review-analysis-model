@@ -1,25 +1,46 @@
 # Python
 __pycache__/
-*.pyc
+*.py[cod]
+*$py.class
+*.so
 
 # Virtual environments
 venv/
 .env/
+env/
+ENV/
 
-# Jupyter
+# Jupyter Notebooks
 .ipynb_checkpoints/
 
-# Model checkpoints
-models/checkpoints/
+# Datasets & Data Files
+*.jsonl
+data/**/*.jsonl
+data/raw/*.jsonl
+data/processed/*.jsonl
+data/final/*.jsonl
+data/raw/
+data/processed/
+data/final/
 
-# Large model files
+# Model Checkpoints & Weights
+checkpoints/
+models/checkpoints/
 *.bin
 *.pt
 *.pth
 *.safetensors
+*.onnx
 
-# Logs
+# Outputs, Logs & Plots
 logs/
+*.log
+outputs/logs/
+outputs/reports/
+outputs/figures/
+outputs/plots/
 
-# Temporary files
+# Temporary & OS Files
+.DS_Store
+Thumbs.db
 *.tmp
